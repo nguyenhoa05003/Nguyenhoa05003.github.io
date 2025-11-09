@@ -1,0 +1,21 @@
+$primary-color: #0d6efd;
+$secondary-color: #6c757d; 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: $primary-color;
+    text-align: center;
+}
+.box-container {
+    background-color: $secondary-color;
+    color: white;
+    height: 200px;
+    @include flex-center;
+}
